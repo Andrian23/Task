@@ -272,6 +272,10 @@ section .content .block-body.charges th {
     width: 100%;
     padding: 1px;
   }
+
+  section .content .charges-block {
+    margin-bottom: 40px;
+  }
 }
 
 /*Sidebar styles*/
