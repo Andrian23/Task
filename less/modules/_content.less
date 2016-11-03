@@ -12,6 +12,7 @@ section{
     justify-content: space-around;
 
     .block-right,.block-left{
+      width: 70%;
       flex: 1 70%;
       padding: 15px;
     }
@@ -23,6 +24,11 @@ section{
     .block-inner{
       height: 100%;
       background: @white;
+      &.charges-block{
+        overflow-x: auto;
+        .block-body{
+        }
+      }
     }
 
     .block-header{
@@ -93,8 +99,10 @@ section{
 
 
       &.charges{
+        overflow-x: auto;
         padding-top: 5px;
         table{
+          min-width: 500px;
           width: 100%;
         }
         td{
@@ -126,8 +134,10 @@ section{
 @media screen and (max-width: @small-mobile) {
   section .content {
     padding: 1px;
+    display: block;
     .block-right, .block-left {
-
+      display: block;
+      width: 100%;
       padding: 1px;
     }
 

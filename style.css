@@ -142,6 +142,7 @@ section .content {
 
 section .content .block-right,
 section .content .block-left {
+  width: 70%;
   flex: 1 70%;
   padding: 15px;
 }
@@ -153,6 +154,10 @@ section .content .block-left {
 section .content .block-inner {
   height: 100%;
   background: #fff;
+}
+
+section .content .block-inner.charges-block {
+  overflow-x: auto;
 }
 
 section .content .block-header {
@@ -224,10 +229,12 @@ section .content .block-body .offer-text {
 }
 
 section .content .block-body.charges {
+  overflow-x: auto;
   padding-top: 5px;
 }
 
 section .content .block-body.charges table {
+  min-width: 500px;
   width: 100%;
 }
 
@@ -256,10 +263,13 @@ section .content .block-body.charges th {
 @media screen and (max-width: 480px) {
   section .content {
     padding: 1px;
+    display: block;
   }
 
   section .content .block-right,
   section .content .block-left {
+    display: block;
+    width: 100%;
     padding: 1px;
   }
 }
