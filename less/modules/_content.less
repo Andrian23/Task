@@ -1,0 +1,135 @@
+section{
+  color: @grey-color;
+  background: @section-bg;
+  &.wrap{
+    padding: 0 0 40px @sidebar-width;
+  }
+  .content{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .block-right,.block-left{
+      flex: 1 70%;
+      padding: 15px;
+    }
+
+
+    .block-left{
+      flex: 1 30%;
+    }
+    .block-inner{
+      height: 100%;
+      background: @white;
+    }
+
+    .block-header{
+      background: @block-header;
+      padding: 30px;
+      min-height: 80px;
+      position: relative;
+      .title{
+        font-weight: 200;
+        color: @black;
+        margin: 0;
+        padding-right: 100px;
+      }
+      .option{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        display: block;
+        font-size: 17px;
+        color: @edit-text-color;
+        text-decoration: none;
+      }
+
+      }
+
+    .block-body{
+      padding: 30px;
+      .plan-title{
+        padding: 5px 20px 20px 50px;
+        margin: 0;
+        position: relative;
+        img{
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      .plan-text{
+        span{
+          font-weight: 700;
+        }
+      }
+
+      .profile-lines{
+        list-style: none;
+        li{
+          display: inline-block;
+          width: 49%;
+
+
+
+          span{
+            display: block;
+            font-weight: 900;
+            font-size: 13px;
+          }
+        }
+      }
+      .offer-title{
+        span{
+          display: block;
+          font-size: 50px;
+        }
+      }
+      .offer-text{
+        font-size: 18px;
+      }
+
+
+      &.charges{
+        padding-top: 5px;
+        table{
+          width: 100%;
+        }
+        td{
+          padding-top:30px;
+        }
+        th{
+          text-align: left;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: @large-mobile) {
+    &.wrap{
+      padding: 0 0 0 0;
+    }
+  }
+}
+
+
+
+
+@media screen and (max-width: @tablet) {
+  section .content .block-body .profile-lines li{
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (max-width: @small-mobile) {
+  section .content {
+    padding: 1px;
+    .block-right, .block-left {
+
+      padding: 1px;
+    }
+
+  }
+}

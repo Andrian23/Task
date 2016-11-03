@@ -1,0 +1,62 @@
+// File Name: _header.less
+// Description: global header styles
+// Used by: Page.less
+// Dependencies:
+// ------------------------------------------------------------
+
+@import '../base/_variables.less';
+
+header{
+  height: @header-height;
+  background: @black;
+  color: @white;
+  position: relative;
+  z-index: 9;
+  position: fixed;
+  right: 0;
+  left: 0;
+  .lv-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    .lv-search-btn{
+      padding-left: 30px;
+      font-size: 20px;
+      cursor: pointer;
+      @media screen and (max-width: @tablet) {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  nav{
+    @media screen and (max-width: @large-mobile) {
+      position: fixed;
+      left: 0;
+      top:  @header-height;
+      background: @black;
+      width: @mobile-menu-width;
+      bottom: 0;
+      z-index: 8;
+      left: -@mobile-menu-width;
+      &.active{
+        left: 0;
+      }
+      ul{
+        li{
+          display: block;
+          a{
+            display: block;
+            padding: 10px;
+            border-bottom: 1px solid @dark-grey;
+            &:hover{
+              background: @white;
+              color: @black;
+            }
+          }
+        }
+      }
+    }
+  }
+}

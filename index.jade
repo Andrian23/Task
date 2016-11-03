@@ -1,0 +1,145 @@
+doctype html
+html(lang='en')
+   head
+      title Review
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge')
+      meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+      link(href='https://fonts.googleapis.com/css?family=Roboto&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css')
+      link(href='style.css' rel='stylesheet' type='text/css')
+      script(src="https://code.jquery.com/jquery-2.2.4.js"   integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="   crossorigin="anonymous")
+   body
+      aside
+         a.logo(href="#")
+            img(src="img/logo.png")
+         ul
+            li
+               a(href="#")
+                  img(src="img/overview.png")
+                  | OVERVIEW
+               a(href="#")
+                  img(src="img/plans.png")
+                  | PLANS & BILLING
+               a(href="#")
+                  img(src="img/services.png")
+                  | REQUEST SERVICES
+               a(href="#")
+                  img(src="img/offer.png")
+                  | CURRENT OFFERS
+               a(href="#")
+                  img(src="img/profile.png")
+                  | PROFILE
+               a(href="#")
+                  img(src="img/charges.png")
+                  | CHARGES
+         a.back-to(href="#")
+            img(src="img/backTo.png")
+            | BACK TO HOME
+
+
+
+      section.wrap
+         header
+            .user
+               img.photo(src="img/avatar.png")
+               a.name(href="#") John Jonsone
+            .header-menu
+               a(href="#") Sign out
+               a(href="#") Help
+         .content
+               .block-left
+                  .block-inner
+                     .block-header
+                        h4.title CURRENT PLAN
+                        a(href="").option VIEW
+                     .block-body
+                        p.plan-title
+                           img(src="img/icon.png")
+                           | Silver Plan
+                        p.plan-text
+                           | Your plan will automatically renew on
+                           span.bold  &nbsp 4/14/16 &nbsp
+                           | and you'll be charged
+                           span.bold  &nbsp  $200.00.
+               .block-right
+                  .block-inner
+                     .block-header
+                        h4.title PROFILE
+                        a(href="").option EDIT PROFILE
+                     .block-body
+                        ul.profile-lines
+                           li
+                              p
+                                 span NAME
+                                 | Jhone Jhonson
+                           li
+                              p
+                                 span ADDRESS
+                                 | 99 Aplly Chery Road
+                           li
+                              p
+                                 span EMAIL
+                                 | jhone.jhonson@gmail.com
+                           li
+                              p
+                                 span CITY
+                                 | Detroit
+                           li
+                              p
+                                 span PHONE
+                                 | 222-234.2344
+                           li
+                              p
+                                 span ZIP
+                                 | 11223
+
+               .block-left
+                  .block-inner
+                     .block-header
+                        h4.title RECENT OFFER
+                        a(href="").option VIEW ALL
+                     .block-body
+                        p.offer-title
+                           span 10% OFF
+                           | Shrub Trimming
+                        p.offer-text
+                           | Promotional offer is only valid for first time use
+               .block-right
+                  .block-inner
+                     .block-header
+                        h4.title RECENT CHARGES
+                        a(href="").option VIEW ALL
+                     .block-body.charges
+                        table
+                           thead
+                              tr
+                                 th DATE
+                                 th(colspan="4")  DESCRIPTION
+                                 th ORDER ID
+                                 th AMOUNT
+                           tbody
+                              tr
+                                 td 4/4/44
+                                 td(colspan="4") Monthly plan: Medium
+                                 td 49504
+                                 td $99.99
+                              tr
+                                 td 4/4/44
+                                 td(colspan="4") Shrub Trimming
+                                 td 49504
+                                 td $99.99
+                              tr
+                                 td 4/4/44
+                                 td(colspan="4") Monthly plan: Medium
+                                 td 49504
+                                 td $99.99
+
+      footer.footer
+         .container
+            span @2016 NEIGHBORHOOD LANDSCAPING, INC.
+            a(href="#").terms-link TERMS OF US
+            a(href="#") PRIVACY POLICY
+
+
+
+

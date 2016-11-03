@@ -1,0 +1,56 @@
+input{
+  border: 1px solid @orange;
+  display: inline-block;
+  outline: none;
+  .border-radius(5px);
+}
+
+.list-control{
+  position: relative;
+  padding-top: 25px;
+  color: @list-color;
+  label{
+    padding-bottom: 7px;
+    display: block;
+  }
+  .selected-item{
+    position: relative;
+    .list-item;
+    .border-radius(5px);
+
+    &:before{
+      .triangle;
+    }
+  }
+  ul{
+    margin: 10px 0 0 0;
+    .border-radius(5px);
+    position: absolute;
+    z-index: 4;
+    top: 80px;
+    display: none;
+    li{
+      .list-item;
+      border-bottom: none;
+      &:hover{
+        background: @orange;
+        color: @white;
+      }
+      &:last-child{
+        border-bottom: 1px solid @list-border-color;
+      }
+    }
+  }
+}
+
+.toggle-mobile-menu{
+  display: none;
+  width: 35px;
+  height: @header-height;
+  background: @mobile-menu-btn;
+  background-size: contain;
+  margin-left: 5px;
+  @media screen and (max-width: @large-mobile) {
+    display: block;
+  }
+}

@@ -1,0 +1,61 @@
+  header{
+    background: @white;
+    width: @width-header;
+    height: @header-height;
+    padding: 25px;
+    position: relative;
+    .user{
+      position: relative;
+
+      .photo{
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+      }
+      .name {
+        display: block;
+        padding-left: 50px;
+        color: @black;
+        text-decoration: none;
+
+      }
+    }
+    .header-menu{
+      position: absolute;
+      right: 0;
+      top: 25px;
+      a{
+        color: @edit-text-color;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0 15px;
+        &:first-child{
+          border-right: 2px solid @edit-text-color;
+        }
+      }
+
+    }
+  }
+
+  @media screen and (max-width: @tablet) {
+    header{
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: @small-mobile) {
+    header{
+      padding: 10px;
+      .user {
+        word-spacing: @small-mobile;
+        .photo{
+          top: 10px;
+        }
+
+      }
+    }
+  }

@@ -1,0 +1,66 @@
+/*Variables - colours  path -> base/_variables.less*/
+@menu-link-hover: orange;
+@orange: #faa71b;
+@white: #fff;
+@black: #252024;
+@grey-font: #818081;
+@grey-color: #adadad;
+@light-grey: #d4d4d4;
+@grey-bg: #ccc;
+@light-black-text: #333;
+@red-bg: #ed5e5e;
+@orange: orange;
+@section-bg: #e5e9ec;
+@list-item-bg: #f8f8f8;
+@list-item-border: #8b8b8b;
+@list-color: #4b4b4b;
+@list-border-color: #bbbbbb;
+
+/*Variables - elements sizes*/
+@sidebar-width: 290px;
+@sidebar-icon-left: 40px;
+@sidebar-icon-top: 19px;
+@header-height: 80px;
+@notification-param: 25px;
+@select-width: 160px;
+@select-item-height: 35px;
+
+/*Variables - screens sizes*/
+@tablet: 1024px;
+@large-mobile: 767px;
+@small-mobile: 480px;
+
+/*Variables - icons*/
+@logout-icon: url(/assets/logout_icon.png) no-repeat  center center;
+@log-icon: url(/assets/cash_sales.png) no-repeat 20px center;
+@search-icon: url(/assets/search_icon.png) no-repeat 15px center;
+@logo-icon: @orange  url(/assets/logo.png) no-repeat 75px center;
+@mobile-menu-btn: url(/assets/menu-button.png) no-repeat center center;
+
+/*Sidebar menus icons*/
+@users-icon: url(/assets/users_icon_off.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@users-icon-hover: url(/assets/users_icon_on.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@settings-icon: url(/assets/settings_icon_off.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@settings-icon-hover: url(/assets/settings_icon_on.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@invoice-icon: url(/assets/invoice.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@invoice-icon-hover: url(/assets/invoice_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@items-icon: url(/assets/items.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@items-icon-hover: url(/assets/items_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@group-icon: url(/assets/group.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@group-icon-hover: url(/assets/group_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@companies-icon: url(/assets/companies.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@companies-icon-hover: url(/assets/companies_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@accounts-icon: url(/assets/accounts.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@accounts-icon-hover: url(/assets/accounts_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@cash-sales-icon: url(/assets/cash_sales.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@cash-sales-icon-hover: url(/assets/cash_sales_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+
+@log-menu-icon: url(/assets/cash_sales.png) no-repeat @sidebar-icon-left @sidebar-icon-top;
+@log-menu-icon-hover: url(/assets/cash_sales_active.png) no-repeat @sidebar-icon-left @sidebar-icon-top;

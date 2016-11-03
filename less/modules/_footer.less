@@ -1,0 +1,34 @@
+footer{
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: @footer-color;
+  min-height: 40px;
+  .container{
+    width: 600px;
+    margin: auto;
+    font-size: 14px;
+    padding: 10px 0;
+    color: @footer-text-color;
+    a{
+      color: @footer-text-color;
+      padding: 0 30px;
+      text-decoration: none;
+      &.terms-link{
+        border-right: 2px solid @footer-text-color;
+      }
+    }
+
+  }
+}
+
+
+@media screen and (max-width: @large-mobile) {
+  footer .container{
+    width: 320px;
+    span{
+      display: none;
+    }
+  }
+}
