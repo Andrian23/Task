@@ -1,3 +1,14 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "WorkSans";
+  font-weight: 700;
+  src: url("fonts/WorkSans-Bold.ttf");
+}
+
 /*Variables - colours  path -> base/_variables.less*/
 
 /*Variables - elements sizes*/
@@ -13,6 +24,7 @@ body {
   width: 100%;
   font-size: 14pt;
   line-height: 1.3;
+  font-family: WorkSans;
 }
 
 body,
@@ -85,6 +97,8 @@ header .header-menu a {
   text-decoration: none;
   display: inline-block;
   padding: 0 15px;
+  font-weight: 700;
+  font-size: 15px;
 }
 
 header .header-menu a:first-child {
@@ -213,7 +227,7 @@ section .content .block-body .profile-lines li {
 section .content .block-body .profile-lines li span {
   display: block;
   font-weight: 900;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 section .content .block-body .offer-title span {
