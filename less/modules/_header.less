@@ -1,12 +1,11 @@
   header{
-    background: @white;
+    background: @main-bg-color;
     width: @width-header;
     height: @header-height;
     padding: 25px;
     position: relative;
     .user{
       position: relative;
-
       .photo{
         position: absolute;
         display: block;
@@ -19,8 +18,12 @@
       .name {
         display: block;
         padding-left: 50px;
-        color: @black;
+        max-width: 300px;
+        color: @all-text-color;
         text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
 
       }
     }
@@ -49,9 +52,14 @@
 
   @media screen and (max-width: @small-mobile) {
     header{
-      padding: 10px;
+      padding: 15px;
       .user {
         word-spacing: @small-mobile;
+        .name{
+          max-height: 50px;
+          overflow: hidden;
+          white-space: pre-line;
+        }
         .photo{
           top: 10px;
         }

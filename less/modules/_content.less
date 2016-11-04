@@ -1,33 +1,30 @@
 section{
-  color: @grey-color;
+  color: @section-color;
   background: @section-bg;
   &.wrap{
     padding: 0 0 40px @sidebar-width;
   }
   .content{
     padding: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
 
+    .block{
+      display: flex;
+      flex-wrap: wrap;
+    }
     .block-right,.block-left{
       width: 70%;
-      flex: 1 70%;
       padding: 15px;
     }
 
 
     .block-left{
-      flex: 1 30%;
+      width: 30%;
     }
     .block-inner{
       height: 100%;
-      background: @white;
+      background: @main-bg-color;
       &.charges-block{
         overflow-x: auto;
-        .block-body{
-        }
       }
     }
 
@@ -38,7 +35,7 @@ section{
       position: relative;
       .title{
         font-weight: 200;
-        color: @black;
+        color: @all-text-color;
         margin: 0;
         padding-right: 100px;
       }
@@ -60,6 +57,9 @@ section{
         padding: 5px 20px 20px 50px;
         margin: 0;
         position: relative;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         img{
           position: absolute;
           top: 0;
@@ -101,16 +101,24 @@ section{
       &.charges{
         overflow-x: auto;
         padding-top: 5px;
-        table{
-          min-width: 500px;
-          width: 100%;
+        .table{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-around;
         }
-        td{
-          padding-top:30px;
+        .td{
+          padding: 10px;
+          flex: 1 15%;
         }
-        th{
-          text-align: left;
+        .th{
+          padding: 10px;
+          flex: 1 15%;
           font-size: 13px;
+          font-weight: 700;
+        }
+        .colspan{
+          flex: 1 50%;
         }
       }
     }
@@ -122,28 +130,38 @@ section{
   }
 }
 
-
+@media screen and (max-width: @netbook) {
+  section .content {
+    padding: 1px;
+    .block {
+      .block-right, .block-left {
+        width: 100%;
+        padding: 5px 10px;
+        .charges {
+          .table {
+            min-width: 600px;
+          }
+        }
+      }
+    }
+  }
+}
 
 
 @media screen and (max-width: @tablet) {
-  section .content .block-body .profile-lines li{
-    width: 100%;
-    display: block;
-  }
-}
-@media screen and (max-width: @small-mobile) {
-  section .content {
-    padding: 1px;
-    display: block;
-    .block-right, .block-left {
-      display: block;
-      width: 100%;
-      padding: 1px;
+  section {
+    .content {
+      .block-body {
+        .profile-lines {
+          li {
+            width: 100%;
+            display: block;
+          }
+        }
+        .plan-text{
+          margin: 5px 0;
+        }
+      }
     }
-    .charges-block{
-      margin-bottom: 40px;
-
-    }
-
   }
 }

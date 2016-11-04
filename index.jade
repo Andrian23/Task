@@ -47,6 +47,7 @@ html(lang='en')
                a(href="#") Sign out
                a(href="#") Help
          .content
+            .block
                .block-left
                   .block-inner
                      .block-header
@@ -92,7 +93,7 @@ html(lang='en')
                               p
                                  span ZIP
                                  | 11223
-
+            .block
                .block-left
                   .block-inner
                      .block-header
@@ -110,29 +111,23 @@ html(lang='en')
                         h4.title RECENT CHARGES
                         a(href="").option VIEW ALL
                      .block-body.charges
-                        table
-                           thead
-                              tr
-                                 th DATE
-                                 th(colspan="4")  DESCRIPTION
-                                 th ORDER ID
-                                 th AMOUNT
-                           tbody
-                              tr
-                                 td 4/4/44
-                                 td(colspan="4") Monthly plan: Medium
-                                 td 49504
-                                 td $99.99
-                              tr
-                                 td 4/4/44
-                                 td(colspan="4") Shrub Trimming
-                                 td 49504
-                                 td $99.99
-                              tr
-                                 td 4/4/44
-                                 td(colspan="4") Monthly plan: Medium
-                                 td 49504
-                                 td $99.99
+                        div.table
+                           div.th DATE
+                           div.th.colspan  DESCRIPTION
+                           div.th ORDER ID
+                           div.th AMOUNT
+                           div.td 4/4/44
+                           div.td.colspan Monthly plan: Medium
+                           div.td 49504
+                           div.td $99.99
+                           div.td 4/4/44
+                           div.td.colspan Shrub Trimming
+                           div.td 49504
+                           div.td $99.99
+                           div.td 4/4/44
+                           div.td.colspan Monthly plan: Medium
+                           div.td 49504
+                           div.td $99.99
 
       footer.footer
          .container
